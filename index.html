@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+    <header>
+        <h1>Animals</h1>
+        <h2>Add Animal</h2>
+        <a href="#" id="add">+</a>
+    </header>
+
+    <div class="columns column">
+        <div id="animals-list"></div>
+        <div id="animals-column">
+            <div id="animals-info"></div>
+        </div>
+    </div>
+    
+    <div id="animals-container" class="dialog transparent">
+        <span class="close">&times;</span>
+
+        <h3 id="title">Animals</h3>
+        <form id="edit-animals" method="post">
+            <input type="hidden" name="_id" value="-1">
+            <p> 
+                <label for="name">Animal Name: </label>
+                <input type="text" id="name" name="name"required>
+            </p>
+            <p>
+                <label for="color">Color: </label>
+                <input type="text" id="color" name="color" required>
+            </p>
+            <p>
+                <label for="size">Size: </label>
+                <input type="text" id="size" name="size" required>
+            </p>
+            <p>
+                <label for="located">Located: </label>
+                <input type="text" id="located" name="located" required>
+            </p>
+            <p>
+                <label for="diet">Diet: </label>
+                <input type="text" id="diet" name="diet" required>
+            </p>
+            <p>
+                <label for="img">Upload Image: </label>
+                <input type="file" id="img" name="img">
+            </p>
+            <p>
+                <button id="add" type="submit">Add Animal</button>
+            </p>
+        </form>
+
+        <section id="success-message" class="hidden">
+            <p>New Animal!</p>
+        </section>
+       
+    </div>
+</html>
